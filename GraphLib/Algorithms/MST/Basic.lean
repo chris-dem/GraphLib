@@ -7,15 +7,19 @@ import Batteries.Data.UnionFind.Basic
 import GraphLib.Graph.Basic
 import Mathlib.Algebra.Order.Monoid.Defs
 import Mathlib.Data.List.Sort
-
 open GraphLib
 /-!
 # `GraphLib.Algorithms.MST`
 
 Placeholder. Minimum spanning tree algorithms: Kruskal, Prim, Borůvka.
 -/
-variable {α : Type*} [Preorder α] [Ord α] [AddCommMonoid α] [IsOrderedAddMonoid α]
+variable {α : Type*}
+variable {β : Type*} [Preorder β] [Ord β] [AddCommMonoid β] [IsOrderedAddMonoid β]
 
 
-def Kruskal (g : SimpleGraph α) := 
-  let sorted_edges := g.edgeSet.
+structure ConnectedGraph where
+  graph 
+
+def Kruskal (g : Graph α β) := by
+  let edgeSet := g.edgeSet
+  let retTree := sorry
