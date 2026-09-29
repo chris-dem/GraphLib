@@ -4,7 +4,6 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Sorrachai Yingchareonthawornchai, Weixuan Yuan
 -/
 import AlgoLib.Theory.Graph.Structures.Forest
-import Mathlib.Tactic
 
 /-!
 # Parent trees
